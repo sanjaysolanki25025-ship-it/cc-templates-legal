@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Official legal information for CC Templates - Viral Hub, including Terms and Conditions and Privacy Policy.">
+  <meta name="description" content="Official Privacy Policy and Terms and Conditions for CC Templates - Viral Hub.">
   <meta name="theme-color" content="#10152b">
 
   <title>Legal Information | CC Templates - Viral Hub</title>
@@ -105,14 +105,6 @@
       margin: 10px 0;
     }
 
-    ul {
-      padding-left: 24px;
-    }
-
-    li {
-      margin: 7px 0;
-    }
-
     a {
       color: var(--brand-dark);
       text-underline-offset: 3px;
@@ -127,6 +119,62 @@
       background: #f1f1ff;
     }
 
+    .documents {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .document-card {
+      display: block;
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fafbff;
+      color: var(--ink);
+      text-decoration: none;
+      transition: all .2s ease;
+      cursor: pointer;
+    }
+
+    .document-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--brand);
+      background: #f1f1ff;
+      box-shadow: 0 12px 30px rgba(91, 85, 217, .10);
+    }
+
+    .document-icon {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 17px;
+      border-radius: 12px;
+      background: #eae9ff;
+      font-size: 26px;
+    }
+
+    .document-card h3 {
+      margin: 0 0 9px;
+      font-size: 19px;
+    }
+
+    .document-card p {
+      margin: 0 0 17px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .document-action {
+      color: var(--brand-dark);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
     .contact {
       margin-top: 28px;
       padding: 20px;
@@ -135,38 +183,8 @@
       background: #fafbff;
     }
 
-    .document-links {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin-top: 20px;
-    }
-
-    .document-link {
-      display: block;
-      padding: 20px;
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background: #fafbff;
-      text-decoration: none;
-      transition: .2s ease;
-    }
-
-    .document-link:hover {
-      border-color: var(--brand);
-      background: #f1f1ff;
-      transform: translateY(-3px);
-    }
-
-    .document-link strong {
-      display: block;
-      margin-bottom: 5px;
-      font-size: 16px;
-    }
-
-    .document-link span {
-      color: var(--muted);
-      font-size: 13px;
+    .contact p {
+      margin: 10px 0;
     }
 
     footer {
@@ -174,6 +192,12 @@
       color: var(--muted);
       text-align: center;
       font-size: 13px;
+    }
+
+    footer a {
+      color: var(--brand-dark);
+      text-decoration: none;
+      margin: 0 8px;
     }
 
     @media (max-width: 560px) {
@@ -191,8 +215,12 @@
         width: calc(100% - 28px);
       }
 
-      .document-links {
+      .documents {
         grid-template-columns: 1fr;
+      }
+
+      .document-card {
+        padding: 22px;
       }
     }
   </style>
@@ -209,9 +237,8 @@
 
       <p>
         Welcome to the official legal information page for
-        CC Templates - Viral Hub. Please review our legal
-        documents to understand our application, services,
-        terms, and privacy practices.
+        CC Templates - Viral Hub. Here you can access our
+        Privacy Policy and Terms & Conditions.
       </p>
 
     </div>
@@ -222,49 +249,84 @@
     <p>
       Welcome to <strong>CC Templates - Viral Hub</strong>.
       This website provides official legal information
-      related to our mobile application, including our
-      Terms and Conditions and Privacy Policy.
+      regarding our mobile application and its services.
     </p>
 
     <p>
-      We encourage all users to read these documents
-      carefully before using our application.
-      These documents explain the applicable rules,
-      responsibilities, and privacy practices.
+      We believe in transparency and encourage all users
+      to review our legal documents to understand our
+      policies, terms, and responsibilities.
     </p>
 
     <div class="notice">
-      <strong>Important Information:</strong>
+      <strong>Important Notice:</strong>
       CC Templates - Viral Hub is an independent
       video-editing template discovery application.
-      It is not affiliated with, endorsed by, or
-      officially connected with CapCut, ByteDance,
-      or any other third-party editing application.
+      It is not affiliated with, endorsed by, sponsored by,
+      or officially connected with CapCut, ByteDance,
+      or their respective developers.
     </div>
 
     <h2>1. Our Legal Documents</h2>
 
     <p>
-      Please use the links below to access the official
-      legal documents associated with our application.
+      Select a document below to read the complete
+      policy. Clicking a document will open its
+      Google Docs page in a new browser tab.
     </p>
 
-    <div class="document-links">
+    <div class="documents">
 
-      <a href="terms.html" class="document-link">
-        <strong>Terms &amp; Conditions →</strong>
-        <span>
-          Read the terms and rules governing your
-          use of CC Templates - Viral Hub.
+      <!-- PRIVACY POLICY CARD -->
+      <a
+        class="document-card"
+        href="https://docs.google.com/document/d/1FKc450fnn61pbWCLKoHeEr2crry6od7STuJ0cDctLmI/edit?tab=t.0"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Read Privacy Policy - opens in a new tab">
+
+        <div class="document-icon">
+          🔒
+        </div>
+
+        <h3>Privacy Policy</h3>
+
+        <p>
+          Learn how we collect, use, process, protect,
+          and share information when you use
+          CC Templates - Viral Hub.
+        </p>
+
+        <span class="document-action">
+          Read Privacy Policy →
         </span>
+
       </a>
 
-      <a href="privacy.html" class="document-link">
-        <strong>Privacy Policy →</strong>
-        <span>
-          Learn how information is collected,
-          used, processed, and shared.
+      <!-- TERMS AND CONDITIONS CARD -->
+      <a
+        class="document-card"
+        href="https://docs.google.com/document/d/1YntX4P1E5MSlG7MkHp5BvrUfi1Ygch3zi0QCuu2qhzQ/edit?tab=t.0"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Read Terms and Conditions - opens in a new tab">
+
+        <div class="document-icon">
+          📄
+        </div>
+
+        <h3>Terms &amp; Conditions</h3>
+
+        <p>
+          Review the rules, conditions, user responsibilities,
+          intellectual property information, and guidelines
+          for using our application.
+        </p>
+
+        <span class="document-action">
+          Read Terms &amp; Conditions →
         </span>
+
       </a>
 
     </div>
@@ -273,32 +335,19 @@
 
     <p>
       CC Templates - Viral Hub helps users discover
-      trending video-editing templates and related
-      resources. Depending on the available features,
-      users may browse templates, view previews,
-      access QR codes, and open compatible
-      third-party editing applications.
-    </p>
-
-    <p>
-      The application may include advertisements
-      and other third-party services to support
-      its functionality.
+      trending video-editing templates and related resources.
+      Depending on the available features, users may browse
+      templates, view previews, access QR codes, and open
+      compatible third-party editing applications.
     </p>
 
     <h2>3. Third-Party Services</h2>
 
     <p>
-      Our application may provide links or access
-      to third-party websites, applications,
-      platforms, and services.
-    </p>
-
-    <p>
-      These third-party services operate independently
-      and are subject to their own terms, conditions,
-      and privacy policies. We recommend reviewing
-      their policies before using those services.
+      Our application may provide links to third-party
+      applications, websites, platforms, and services.
+      These services operate independently and are
+      governed by their own terms and privacy policies.
     </p>
 
     <h2>4. Application Information</h2>
@@ -306,7 +355,7 @@
     <div class="contact">
 
       <p>
-        <strong>Application Name:</strong>
+        <strong>Application:</strong>
         CC Templates - Viral Hub
       </p>
 
@@ -342,13 +391,13 @@
     <h2>5. Contact Us</h2>
 
     <p>
-      If you have any questions, concerns, or requests
-      regarding our application or legal documents,
-      please contact our support team.
+      If you have any questions regarding our application,
+      Privacy Policy, or Terms & Conditions, please contact
+      our support team.
     </p>
 
     <div class="notice">
-      <strong>Email Support:</strong>
+      <strong>Support Email:</strong>
       <a href="mailto:business@novicbase.com">
         business@novicbase.com
       </a>
@@ -357,8 +406,31 @@
   </main>
 
   <footer>
+
     <p>© 2026 DANDELIONSIT. All rights reserved.</p>
-    <p>CC Templates - Viral Hub | Official Legal Information</p>
+
+    <p>
+      CC Templates - Viral Hub | Official Legal Information
+    </p>
+
+    <p>
+      <a
+        href="https://docs.google.com/document/d/1FKc450fnn61pbWCLKoHeEr2crry6od7STuJ0cDctLmI/edit?tab=t.0"
+        target="_blank"
+        rel="noopener noreferrer">
+        Privacy Policy
+      </a>
+
+      |
+
+      <a
+        href="https://docs.google.com/document/d/1YntX4P1E5MSlG7MkHp5BvrUfi1Ygch3zi0QCuu2qhzQ/edit?tab=t.0"
+        target="_blank"
+        rel="noopener noreferrer">
+        Terms &amp; Conditions
+      </a>
+    </p>
+
   </footer>
 
 </body>
